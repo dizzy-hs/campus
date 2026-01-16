@@ -19,6 +19,7 @@
 
     <properties>
         <java.version>17</java.version>
+        <mybatis-flex.version>1.11.5</mybatis-flex.version>
     </properties>
 
     <dependencies>
@@ -31,6 +32,18 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mybatis-flex</groupId>
+            <artifactId>mybatis-flex-spring-boot3-starter</artifactId>
+            <version>${mybatis-flex.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mybatis-flex</groupId>
+            <artifactId>mybatis-flex-processor</artifactId>
+            <version>${mybatis-flex.version}</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
